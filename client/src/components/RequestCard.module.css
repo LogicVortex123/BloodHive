@@ -1,0 +1,67 @@
+.card {
+    padding: 1.25rem;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.top h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.blood {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-items: flex-end;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.info strong {
+    color: var(--text);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.row svg {
+    color: var(--primary);
+}
+
+.message {
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+    font-style: italic;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}

@@ -1,0 +1,103 @@
+.welcome {
+    margin-bottom: 2rem;
+}
+
+.welcome h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+}
+
+.welcome p {
+    color: var(--text-muted);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.statCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+}
+
+.statIcon {
+    width: 48px;
+    height: 48px;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.statCard h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.statCard p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.sectionHeading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.navGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.navCard {
+    padding: 1.5rem;
+}
+
+.navIcon {
+    width: 44px;
+    height: 44px;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.navCard h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.navCard p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.requestGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.empty {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 1rem;
+}

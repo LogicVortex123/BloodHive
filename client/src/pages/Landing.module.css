@@ -1,0 +1,245 @@
+.hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+    padding: 4rem 1.25rem;
+}
+
+.heroLogo {
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.03em;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 540px;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.alt {
+    background: var(--white);
+}
+
+.featureGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.featureCard {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: all var(--transition);
+}
+
+.featureCard:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.featureIcon {
+    width: 48px;
+    height: 48px;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.featureCard h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.featureCard p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.stepsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.stepCard {
+    padding: 1.5rem;
+    border-left: 3px solid var(--primary);
+    background: var(--bg);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.stepNum {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    opacity: 0.3;
+}
+
+.stepCard h3 {
+    font-size: 1.05rem;
+    margin: 0.5rem 0;
+}
+
+.stepCard p {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.donateBanner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: var(--radius);
+}
+
+.donateIcon {
+    font-size: 4rem;
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+
+.donateBanner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.donateBanner p {
+    opacity: 0.9;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.statsSection {
+    background: var(--primary-light);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.statCard {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.statCard h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.statCard p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.testimonialGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.testimonialCard {
+    background: var(--white);
+    padding: 1.75rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.testimonialCard p {
+    font-style: italic;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.testimonialAuthor strong {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.testimonialAuthor span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.cta {
+    padding: 4rem 0;
+}
+
+.ctaBox {
+    text-align: center;
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.ctaBox h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.ctaBox p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .donateBanner {
+        flex-direction: column;
+        text-align: center;
+    }
+}

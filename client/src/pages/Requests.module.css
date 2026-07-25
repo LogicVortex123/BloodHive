@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0;
+}
+
+.tabs button {
+    padding: 0.65rem 1.25rem;
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: all var(--transition);
+}
+
+.tabs button:hover {
+    color: var(--primary);
+}
+
+.activeTab {
+    color: var(--primary) !important;
+    border-bottom-color: var(--primary) !important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+}

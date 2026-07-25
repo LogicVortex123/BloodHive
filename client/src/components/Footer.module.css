@@ -1,0 +1,91 @@
+.footer {
+    background: var(--footer-bg);
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: auto;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 2rem;
+    padding: 3rem 1.25rem;
+}
+
+.developer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.developer h4 {
+    color: white;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.devName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.socials a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    transition: all var(--transition);
+}
+
+.socials a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+
+.brand p {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    max-width: 280px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.links h4 {
+    color: white;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.links a {
+    font-size: 0.875rem;
+    transition: color var(--transition);
+}
+
+.links a:hover {
+    color: white;
+}
+
+.bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.25rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
