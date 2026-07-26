@@ -1,13 +1,12 @@
 import axios from "axios";
 
-const rawBaseURL = import.meta.env.VITE_API_URL || "";
+const rawBaseURL = import.meta.env.VITE_API_URL || "https://bloodhive.onrender.com";
 const trimmedBaseURL = rawBaseURL.trim();
 
-const baseURL = trimmedBaseURL
-    ? (trimmedBaseURL.endsWith("/api") 
-        ? trimmedBaseURL 
-        : `${trimmedBaseURL.replace(/\/$/, "")}/api`)
-    : "/api";
+// Ensure the baseURL ends with /api (without duplicating /api if it's already there)
+const baseURL = trimmedBaseURL.endsWith("/api") 
+    ? trimmedBaseURL 
+    : `${trimmedBaseURL.replace(/\/$/, "")}/api`;
 
 const API = axios.create({
     baseURL,
