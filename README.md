@@ -158,7 +158,7 @@ BloodHive
 > New users can quickly join the BloodHive community by creating an account.
 
 <p align="center">
-<img src="./screenshots/Signup.png" width="850">
+<img src="./screenshots/Register.png" width="850">
 </p>
 
 ---
