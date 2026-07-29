@@ -339,7 +339,7 @@ GitHub:
 https://github.com/LogicVortex123
 
 LinkedIn:
-https://linkedin.com/in/anushkadudhe
+https://www.linkedin.com/in/anushka-dudhe-22549b369/
 
 ---
 
@@ -348,7 +348,5 @@ https://linkedin.com/in/anushkadudhe
 ## ❤️ Every Drop Counts.
 
 ### BloodHive — Connecting Donors. Saving Lives.
-
-⭐ If you found this project helpful, consider giving it a star!
 
 </div>
